@@ -35,8 +35,7 @@ loggedIn() {
   return !this.jwtHelper.isTokenExpired(token);
 }
 
-register(model: any) { 
-  debugger;
+register(model: any) {
     return this.http.post('http://localhost:5000/api/auth/register', model);
 }
 }
